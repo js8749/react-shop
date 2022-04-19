@@ -1,10 +1,12 @@
 {
   "name": "react-shop",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "curso practico de react",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d dist",
     "start": "webpack serve --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.js"
   },
@@ -17,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/js8749/react-shop/issues"
   },
-  "homepage": "https://github.com/js8749/react-shop#readme",
+  "homepage": "https://js8749.github.io/react-shop/",
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.17.0",
     "axios": "^0.26.1",
@@ -35,6 +37,7 @@
     "css-minimizer-webpack-plugin": "^3.4.1",
     "dotenv-webpack": "^7.1.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^3.2.3",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
